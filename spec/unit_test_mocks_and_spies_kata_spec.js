@@ -2,7 +2,7 @@ let Calculator = require("../src/unit_test_mocks_and_spies_kata");
 let calculator = new Calculator();
 
 describe("mock test calculator", function() {
-  it("checks if the the subtract() function", () => {
+  it("checks if the the subtract() function has been called", () => {
     spyOn(calculator, "subtract");
 
     calculator.subtract();
