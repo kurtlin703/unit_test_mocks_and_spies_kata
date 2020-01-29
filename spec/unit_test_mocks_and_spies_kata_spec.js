@@ -9,7 +9,7 @@ describe("mock test calculator", function() {
 
     expect(calculator.subtract).toHaveBeenCalled();
   });
-  it("checks if the subtract() function has been called", () => {
+  it("checks if the subtract() function has been called twice", () => {
     spyOn(calculator, "subtract");
     calculator.subtract();
     calculator.subtract();
